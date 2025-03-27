@@ -20,6 +20,3 @@ export const Primary: Story = {
 export const Outilined: Story = {
   args: { variant: "outlined" },
 };
-export const Destructive: Story = {
-  args: { variant: "primary" },
-};
