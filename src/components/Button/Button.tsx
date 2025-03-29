@@ -1,28 +1,31 @@
 import React from 'react';
 
 interface ButtonProps {
-  variant?: 'primary' | 'secondary' | 'outlined';
-  color?: string;
+  variant?: 'default' | 'outlined' | 'disabled';
+  backgroundColor?: string;
   width?: string;
   height?: string;
+  disabled: boolean;
+  onClick?: () => void;
   children: React.ReactNode;
 }
 
 export const Button: React.FC<ButtonProps> = ({
   variant,
   children,
-  color,
+  backgroundColor,
   width,
   height,
 }) => {
   return (
     <button
+      disabled={variant === 'disabled'}
       className={`px-4 py-2 rounded-lg font-semibold ${
-        variant === 'primary' ? 'text-white' : 'text-black border-2'
+        variant !== 'outlined' ? 'text-white' : 'text-black border-2'
       }`}
       style={
-        variant === 'primary' && color
-          ? { backgroundColor: color, width: width, height: height }
+        backgroundColor
+          ? { backgroundColor: backgroundColor, width: width, height: height }
           : {}
       }
     >
