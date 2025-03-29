@@ -18,7 +18,9 @@ export const Tooltip: React.FC<TooltipProps> = ({
   return (
     <span
       className={`px-4 py-2 rounded-lg font-semibold ${
-        variant !== 'outlined' ? 'text-white' : 'text-black border-2'
+        variant !== 'outlined'
+          ? 'text-white border-none'
+          : 'text-black border-2'
       }`}
       style={
         backgroundColor

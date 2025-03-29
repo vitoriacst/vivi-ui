@@ -20,3 +20,8 @@ type Story = StoryObj<typeof Tooltip>;
 export const Default: Story = {
   args: {variant:"default", children:"Default Tooltip", backgroundColor:'#004aad'}
 }
+
+export const Outilined: Story = {
+  args: {variant:"outlined", children:"Default Tooltip"}
+}
+
