@@ -12,7 +12,6 @@ export const Input: React.FC<InputProps> = ({
   type,
   placeholder,
   variant,
-  disabled,
 }) => {
   return (
     <input

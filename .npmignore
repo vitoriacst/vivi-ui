@@ -1,0 +1,14 @@
+.next
+node_modules
+src
+storybook-static
+.git
+.gitignore
+*.stories.tsx
+*.test.tsx
+*.config.*
+README.md
+.eslintrc
+.prettierrc
+tsconfig.json
+tsconfig.build.json
